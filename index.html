@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Yasmim Soares | Desenvolvedora de Sistemas & Criativa</title>
+  <meta name="description" content="Portfólio profissional e currículo digital de Yasmim Soares. Estudante de Desenvolvimento de Sistemas, criatividade visual e customização de jaquetas.">
+  <meta name="theme-color" content="#07090E">
+  
+  <!-- Fontes do Google: Syne (Impacto Editorial), Space Grotesk (Tech/Racing), JetBrains Mono (Specs) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+  <!-- BACKGROUND GRID, AMBIENT GLOW & BRILHOS NEON -->
+  <div class="ambient-glow glow-top"></div>
+  <div class="ambient-glow glow-bottom"></div>
+  <div class="ambient-glow glow-center"></div>
+  <div class="ambient-glow glow-accent"></div>
+  <div class="editorial-grid-overlay"></div>
+
+  <!-- NAVIGATION HEADER (ESTILO LANDO NORRIS) -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <a href="#home" class="brand-logo" aria-label="Voltar ao início">
+        <span class="brand-monogram">YS</span>
+        <span class="brand-spec">// DEV.01</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Início</a></li>
+          <li><a href="#about" class="nav-link">Sobre</a></li>
+          <li><a href="#career" class="nav-link">Carreira</a></li>
+          <li><a href="#projects" class="nav-link">Projetos</a></li>
+          <li><a href="#beyond-code" class="nav-link nav-highlight">Hall da Fama</a></li>
+          <li><a href="#contact" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="header-actions">
+        <a href="#contact" class="btn-pill-white">
+          <span>Fale Comigo</span>
+          <svg class="icon-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation (Otimizado para Celular) -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <nav class="mobile-nav">
+        <ul class="mobile-nav-links">
+          <li><a href="#home" class="mobile-link"><span>01</span> Início</a></li>
+          <li><a href="#about" class="mobile-link"><span>02</span> Sobre Mim</a></li>
+          <li><a href="#career" class="mobile-link"><span>03</span> Carreira</a></li>
+          <li><a href="#projects" class="mobile-link"><span>04</span> Projetos</a></li>
+          <li><a href="#beyond-code" class="mobile-link highlight-mobile"><span>05</span> Hall da Fama (Jaquetas)</a></li>
+          <li><a href="#contact" class="mobile-link"><span>06</span> Contato</a></li>
+        </ul>
+        <div class="mobile-drawer-footer">
+          <a href="https://wa.me/5511934219420" target="_blank" rel="noopener noreferrer" class="mobile-whatsapp-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>Conversar no WhatsApp: (11) 93421-9420</span>
+          </a>
+          <a href="https://github.com/mimy2899-maker" target="_blank" rel="noopener noreferrer" class="mobile-github-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span>GitHub @mimy2899-maker</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION 1: HOME / HERO -->
+    <section class="hero-section" id="home">
+      <div class="section-container hero-layout">
+        
+        <!-- Top Editorial Telemetry Bar -->
+        <div class="editorial-meta-bar">
+          <div class="meta-item status-live">
+            <span class="pulsing-dot"></span>
+            <span class="meta-label">DISPONÍVEL PARA ESTÁGIO & JUNIOR</span>
+          </div>
+          <div class="meta-item hide-mobile">
+            <span class="meta-dim">ROLE:</span>
+            <span class="meta-val">DEV. SISTEMAS</span>
+          </div>
+          <div class="meta-item hide-mobile">
+            <span class="meta-dim">FOCUS:</span>
+            <span class="meta-val">FULL-STACK & CREATIVE CODE</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-dim">LOC:</span>
+            <span class="meta-val">SÃO PAULO / BRASIL</span>
+          </div>
+        </div>
+
+        <!-- Main Hero Headline -->
+        <div class="hero-main-content">
+          <div class="hero-badge-tag">
+            <span class="badge-white">EDN 2026</span>
+            <span class="tag-bracket">[</span>
+            <span class="tag-shimmer">PORTFÓLIO & CURRÍCULO DIGITAL</span>
+            <span class="tag-bracket">]</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="title-line name-first">YASMIM</span>
+            <span class="title-line name-last">SOARES<span class="electric-dot glow-dot">.</span></span>
+          </h1>
+
+          <div class="hero-subgrid">
+            <div class="hero-role-block">
+              <h2 class="hero-role-title">Estudante de Desenvolvimento de Sistemas</h2>
+              <p class="hero-bio-short">
+                Unindo a arquitetura lógica de software à sensibilidade visual autoral e ao trabalho manual. 
+                Focada em construir aplicações modernas, responsivas e com acabamento impecável.
+              </p>
+            </div>
+
+            <div class="hero-actions-group">
+              <a href="#projects" class="btn-primary-action btn-glow-effect">
+                <span class="btn-text">Conhecer Projetos</span>
+                <span class="btn-icon-wrapper">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+              </a>
+
+              <a href="#beyond-code" class="btn-white-action btn-shine">
+                <span>Ver Hall da Fama (Jaquetas)</span>
+                <span class="btn-icon-wrapper">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Editorial Telemetry Cards / Fast Stats -->
+        <div class="hero-footer-specs">
+          <div class="spec-card">
+            <span class="spec-number">01</span>
+            <div class="spec-info">
+              <span class="spec-title">Desenvolvimento</span>
+              <span class="spec-desc">Lógica algorítmica, web responsiva & código limpo</span>
+            </div>
+          </div>
+
+          <div class="spec-card">
+            <span class="spec-number">02</span>
+            <div class="spec-info">
+              <span class="spec-title">Interfaces & UI</span>
+              <span class="spec-desc">Design esportivo, moderno, estético e funcional</span>
+            </div>
+          </div>
+
+          <div class="spec-card spec-highlight">
+            <span class="spec-number">03</span>
+            <div class="spec-info">
+              <span class="spec-title">Hall da Fama Manual</span>
+              <span class="spec-desc">Customização de jaquetas, disciplina e rigor aos detalhes</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RUNNING MARQUEE TICKER (Estilo Lando Norris F1) -->
+      <div class="editorial-ticker">
+        <div class="ticker-track">
+          <span class="ticker-item">SISTEMAS WEB <span class="ticker-sep">///</span></span>
+          <span class="ticker-item">HALL DA FAMA: JAQUETAS CUSTOM <span class="ticker-sep">///</span></span>
+          <span class="ticker-item">CÓDIGO LIMPO <span class="ticker-sep">///</span></span>
+          <span class="ticker-item">UPCYCLING & ARTE MANUAL <span class="ticker-sep">///</span></span>
+          <span class="ticker-item">GITHUB: @MIMY2899-MAKER <span class="ticker-sep">///</span></span>
+          <span class="ticker-item">WHATSAPP: (11) 93421-9420 <span class="ticker-sep">///</span></span>
+          <!-- Duplicate for seamless loop -->
+          <span class="ticker-item">SISTEMAS WEB <span class="ticker-sep">///</span></span>
+          <span class="ticker-item">HALL DA FAMA: JAQUETAS CUSTOM <span class="ticker-sep">///</span></span>
+          <span class="ticker-item">CÓDIGO LIMPO <span class="ticker-sep">///</span></span>
+          <span class="ticker-item">UPCYCLING & ARTE MANUAL <span class="ticker-sep">///</span></span>
+          <span class="ticker-item">GITHUB: @MIMY2899-MAKER <span class="ticker-sep">///</span></span>
+          <span class="ticker-item">WHATSAPP: (11) 93421-9420 <span class="ticker-sep">///</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT ME -->
+    <section class="section-block about-section" id="about">
+      <div class="section-container">
+        
+        <div class="section-header-editorial">
+          <div class="section-indicator">
+            <span class="indicator-badge">02</span>
+            <span class="indicator-bar"></span>
+            <span class="indicator-title">MANIFESTO & IDENTIDADE</span>
+          </div>
+          <h2 class="section-main-heading">SOBRE MIM<span class="electric-dot glow-dot">.</span></h2>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Editorial Visual Profile Card -->
+          <div class="about-visual-card">
+            <div class="visual-card-inner">
+              <div class="visual-header-tag">
+                <span class="tag-status">PROFILE // SYS.LOG</span>
+                <span class="badge-white-sm">YS.2026</span>
+              </div>
+              
+              <div class="avatar-editorial-box">
+                <div class="avatar-monogram-display">
+                  <div class="avatar-ring-outer"></div>
+                  <div class="avatar-ring-inner">
+                    <span class="avatar-letters">YS</span>
+                  </div>
+                </div>
+                <div class="avatar-caption">
+                  <span class="caption-name">Yasmim Soares</span>
+                  <span class="caption-sub">Software Dev Student & Creator</span>
+                </div>
+              </div>
+
+              <div class="visual-meta-list">
+                <div class="visual-meta-row">
+                  <span class="v-label">Disciplina Principal</span>
+                  <span class="v-value">Desenvolvimento de Sistemas</span>
+                </div>
+                <div class="visual-meta-row">
+                  <span class="v-label">Abordagem</span>
+                  <span class="v-value">Estruturada, Prática e Visual</span>
+                </div>
+                <div class="visual-meta-row">
+                  <span class="v-label">Expressão Autoral</span>
+                  <span class="v-value highlight-cyan">Customização de Jaquetas</span>
+                </div>
+                <div class="visual-meta-row">
+                  <span class="v-label">Ambiente</span>
+                  <span class="v-value">Git, VS Code, Web Stack</span>
+                </div>
+              </div>
+
+              <div class="visual-card-accent-bar"></div>
+            </div>
+          </div>
+
+          <!-- Editorial Text Narrative -->
+          <div class="about-narrative-content">
+            <h3 class="narrative-lead">
+              Transformar ideias abstratas em algo tangível, resistente e esteticamente marcante: esse é o princípio que guia tanto o meu código quanto a customização manual.
+            </h3>
+
+            <div class="narrative-body">
+              <p>
+                Sou estudante de <strong>Desenvolvimento de Sistemas</strong>, dedicada a dominar a tecnologia desde as bases algorítmicas até a criação de interfaces digitais de alta precisão.
+              </p>
+              <p>
+                Meu interesse por desenvolvimento vem da vontade de solucionar problemas reais de forma elegante e organizada. Tenho fascínio em entender como dados se transformam em experiências visuais intuitivas.
+              </p>
+              <p>
+                Além do terminal, dedico horas à <strong>customização de jaquetas e peças manuais</strong>. Esse trabalho exige paciência milimétrica, planejamento prévio de camadas e foco absoluto em cada traço — qualidades que aplico diretamente ao programar, debugar e entregar software de qualidade.
+              </p>
+            </div>
+
+            <!-- Focus Pills -->
+            <div class="about-interest-chips">
+              <span class="chip-item">💻 Lógica & Algoritmos</span>
+              <span class="chip-item">🌐 Interfaces Web Modernas</span>
+              <span class="chip-item">🎨 Design de Experiência</span>
+              <span class="chip-item">🗃️ Modelagem de Dados</span>
+              <span class="chip-item chip-white">🧥 Customização de Jaquetas</span>
+              <span class="chip-item">🚀 Aprendizado Ágil</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: CAREER & QUALIFICATIONS -->
+    <section class="section-block career-section" id="career">
+      <div class="section-container">
+        
+        <div class="section-header-editorial">
+          <div class="section-indicator">
+            <span class="indicator-badge">03</span>
+            <span class="indicator-bar"></span>
+            <span class="indicator-title">TRAJETÓRIA & COMPETÊNCIAS</span>
+          </div>
+          <h2 class="section-main-heading">CARREIRA<span class="electric-dot glow-dot">.</span></h2>
+        </div>
+
+        <div class="career-cards-grid">
+          
+          <!-- Card 1: Objetivo Profissional -->
+          <div class="career-card span-col-12 highlight-card">
+            <div class="card-corner-tag">01 // DIRETRIZ</div>
+            <div class="career-card-content">
+              <div class="career-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+              </div>
+              <div class="career-text-group">
+                <h3 class="career-card-title">Objetivo Profissional</h3>
+                <p class="career-card-desc">
+                  Atuar no desenvolvimento de software como <strong>estagiária ou desenvolvedora júnior</strong>, contribuindo com raciocínio lógico estruturado, criação de interfaces web responsivas e organização metódica. Busco um ambiente colaborativo e desafiador onde eu possa somar com dedicação diária enquanto amplio minhas competências práticas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Formação Acadêmica -->
+          <div class="career-card span-col-6">
+            <div class="card-corner-tag">02 // FORMAÇÃO</div>
+            <div class="career-card-content">
+              <div class="career-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="career-text-group">
+                <h3 class="career-card-title">Formação Acadêmica</h3>
+                <div class="academic-entry">
+                  <div class="entry-header">
+                    <span class="course-name">Curso Técnico em Desenvolvimento de Sistemas</span>
+                    <span class="status-badge-white">Em Andamento</span>
+                  </div>
+                  <p class="entry-details">
+                    Formação orientada a fundamentos essenciais de TI: lógica de programação estruturada e orientada a objetos, 
+                    arquitetura e modelagem de bancos de dados relacionais (SQL), desenvolvimento web responsivo (HTML, CSS, JavaScript) 
+                    e metodologias de ciclo de vida de software.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Competências Pessoais -->
+          <div class="career-card span-col-6">
+            <div class="card-corner-tag">03 // SOFT SKILLS</div>
+            <div class="career-card-content">
+              <div class="career-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div class="career-text-group">
+                <h3 class="career-card-title">Competências Pessoais</h3>
+                <ul class="soft-skills-list">
+                  <li>
+                    <strong>Resolução Analítica:</strong> Decomposição metódica de problemas lógicos e atenção a causas-raiz.
+                  </li>
+                  <li>
+                    <strong>Atenção aos Detalhes:</strong> Rigor na entrega, consistência de layout e organização estrutural.
+                  </li>
+                  <li>
+                    <strong>Autonomia & Curiosidade:</strong> Facilidade para aprender novas linguagens, bibliotecas e documentações.
+                  </li>
+                  <li>
+                    <strong>Trabalho em Equipe:</strong> Postura cooperativa, escuta atenta a feedbacks e pontualidade.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Qualificações Técnicas / Stack -->
+          <div class="career-card span-col-12 technical-stack-card">
+            <div class="card-corner-tag">04 // STACK TÉCNICA</div>
+            <div class="career-card-content">
+              <h3 class="career-card-title">Habilidades & Tecnologias Aplicadas</h3>
+              <p class="career-card-subtitle">Competências desenvolvidas e praticadas ativamente nos projetos:</p>
+
+              <div class="skills-categories-grid">
+                
+                <!-- Category A -->
+                <div class="skill-category">
+                  <div class="category-header">
+                    <span class="category-code">[01]</span>
+                    <span class="category-title">Front-End & Interface</span>
+                  </div>
+                  <ul class="skill-tags-list">
+                    <li><span class="tech-tag">HTML5 Semântico</span></li>
+                    <li><span class="tech-tag">CSS3 / Flexbox & Grid</span></li>
+                    <li><span class="tech-tag">JavaScript Moderno (ES6+)</span></li>
+                    <li><span class="tech-tag">Design Responsivo & Mobile-First</span></li>
+                    <li><span class="tech-tag">Acessibilidade Web (a11y)</span></li>
+                  </ul>
+                </div>
+
+                <!-- Category B -->
+                <div class="skill-category">
+                  <div class="category-header">
+                    <span class="category-code">[02]</span>
+                    <span class="category-title">Lógica, Back-End & Dados</span>
+                  </div>
+                  <ul class="skill-tags-list">
+                    <li><span class="tech-tag">Lógica de Programação & Algoritmos</span></li>
+                    <li><span class="tech-tag">Programação Orientada a Objetos</span></li>
+                    <li><span class="tech-tag">Bancos de Dados Relacionais (SQL)</span></li>
+                    <li><span class="tech-tag">Consumo e Integração de APIs</span></li>
+                    <li><span class="tech-tag">Estruturação de Dados</span></li>
+                  </ul>
+                </div>
+
+                <!-- Category C -->
+                <div class="skill-category">
+                  <div class="category-header">
+                    <span class="category-code">[03]</span>
+                    <span class="category-title">Ferramentas & Fluxo</span>
+                  </div>
+                  <ul class="skill-tags-list">
+                    <li><span class="tech-tag">Git & Controle de Versão</span></li>
+                    <li><span class="tech-tag">GitHub Repositories</span></li>
+                    <li><span class="tech-tag">VS Code Environment</span></li>
+                    <li><span class="tech-tag">Figma (Inspeção & Prototipagem)</span></li>
+                    <li><span class="tech-tag">Terminal & Linha de Comando</span></li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: PROJECTS -->
+    <section class="section-block projects-section" id="projects">
+      <div class="section-container">
+        
+        <div class="section-header-editorial">
+          <div class="section-indicator">
+            <span class="indicator-badge">04</span>
+            <span class="indicator-bar"></span>
+            <span class="indicator-title">REPOSITÓRIOS & IMPLEMENTAÇÕES</span>
+          </div>
+          <div class="projects-headline-row">
+            <h2 class="section-main-heading">PROJETOS<span class="electric-dot glow-dot">.</span></h2>
+            <a href="https://github.com/mimy2899-maker" target="_blank" rel="noopener noreferrer" class="github-profile-link-top">
+              <span>Acessar perfil @mimy2899-maker</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <p class="section-lead-text">
+          Aplicações acadêmicas e projetos autorais com código versionado no GitHub, focados em arquitetura limpa, responsividade e usabilidade.
+        </p>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid">
+          
+          <!-- PROJECT CARD 1 -->
+          <article class="project-card card-glow-hover">
+            <div class="project-card-header">
+              <span class="project-type-tag">PROJETO AUTORAL</span>
+              <span class="project-id-tag">#PRJ-01</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Portfólio & Currículo Editorial</h3>
+              <p class="project-description">
+                Website de portfólio desenvolvido em HTML5 semântico, CSS3 moderno e JavaScript puro. 
+                Inspirado na estética esportiva e no Hall da Fama do site oficial de Lando Norris, 
+                com alto contraste, detalhes em azul elétrico e elementos brancos marcantes.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">HTML5 Semântico</span>
+                <span class="tech-pill">CSS3 Moderno</span>
+                <span class="tech-pill">JavaScript ES6</span>
+                <span class="tech-pill">Design Editorial</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://github.com/mimy2899-maker" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <span>Ver no GitHub</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+              <span class="project-meta-info">Repositório Público</span>
+            </div>
+          </article>
+
+          <!-- PROJECT CARD 2 -->
+          <article class="project-card card-glow-hover">
+            <div class="project-card-header">
+              <span class="project-type-tag">PROJETO ACADÊMICO</span>
+              <span class="project-id-tag">#PRJ-02</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Sistema de Gerenciamento & Cadastro</h3>
+              <p class="project-description">
+                Aplicação acadêmica desenvolvida no curso de Desenvolvimento de Sistemas com foco em operações essenciais de dados (CRUD), 
+                validação no front-end, organização de regras de negócio e estruturação relacional de tabelas.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Lógica de Programação</span>
+                <span class="tech-pill">Modelagem SQL</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">Git / GitHub</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://github.com/mimy2899-maker" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <span>Ver no GitHub</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+              <span class="project-meta-info">Repositório Acadêmico</span>
+            </div>
+          </article>
+
+          <!-- PROJECT CARD 3 -->
+          <article class="project-card card-glow-hover">
+            <div class="project-card-header">
+              <span class="project-type-tag">ESTUDOS & ALGORITMOS</span>
+              <span class="project-id-tag">#PRJ-03</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Laboratório de Lógica & Estruturas de Dados</h3>
+              <p class="project-description">
+                Repositório prático de exercícios e implementações de algoritmos computacionais, matrizes, 
+                estruturas de controle, loops e desafios práticos voltados à resolução analítica de problemas.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">Algoritmos</span>
+                <span class="tech-pill">Estruturas de Dados</span>
+                <span class="tech-pill">Versionamento</span>
+                <span class="tech-pill">Boas Práticas</span>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <a href="https://github.com/mimy2899-maker" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <span>Ver no GitHub</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+              <span class="project-meta-info">Repositório de Prática</span>
+            </div>
+          </article>
+
+          <!-- GITHUB HUB CARD -->
+          <article class="project-card github-hub-card card-glow-hover">
+            <div class="hub-card-inner">
+              <div class="hub-icon-circle glow-circle">
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </div>
+
+              <div class="hub-content">
+                <span class="hub-tag">GITHUB ECOSYSTEM</span>
+                <h3 class="hub-title">Código em Tempo Real</h3>
+                <p class="hub-desc">
+                  Todos os repositórios, commits, testes de novas tecnologias e exercícios estão centralizados no meu perfil oficial.
+                </p>
+                <a href="https://github.com/mimy2899-maker" target="_blank" rel="noopener noreferrer" class="btn-primary-action btn-sm">
+                  <span>github.com/mimy2899-maker</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: HALL DA FAMA // JAQUETAS COM AS FOTOS REAIS DE YASMIM SOARES
+         ========================================================================== -->
+    <section class="section-block beyond-code-section" id="beyond-code">
+      <div class="section-container">
+        
+        <div class="section-header-editorial">
+          <div class="section-indicator">
+            <span class="indicator-badge">05</span>
+            <span class="indicator-bar"></span>
+            <span class="indicator-title">BEYOND CODE // ARTE MANUAL</span>
+          </div>
+          <div class="hall-fame-title-row">
+            <div>
+              <span class="hall-fame-sub">COLEÇÃO AUTORAL DE JAQUETAS CUSTOMIZADAS</span>
+              <h2 class="section-main-heading">HALL DA FAMA<span class="electric-dot glow-dot">.</span></h2>
+            </div>
+            <div class="hall-fame-badge-box hide-mobile">
+              <span class="badge-racing-white">EDN // RACING & STREET</span>
+              <span class="badge-racing-blue glow-pill">100% MANUAL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="beyond-lead-wrapper">
+          <p class="beyond-statement">
+            A mesma precisão exigida ao estruturar um sistema se manifesta na desconstrução, costura e pintura de cada jaqueta. 
+            Sem botão de desfazer: cada camada exige planejamento, rigor técnico e atenção absoluta.
+          </p>
+          
+          <!-- Category Filter Tabs -->
+          <div class="hall-fame-filter-tabs" id="hallFameFilters">
+            <button class="filter-tab-btn active" data-filter="all">Todas as Peças</button>
+            <button class="filter-tab-btn" data-filter="denim">Denim Custom</button>
+            <button class="filter-tab-btn" data-filter="utility">Techwear & Utility</button>
+            <button class="filter-tab-btn" data-filter="experiment">Especiais & Tintas</button>
+          </div>
+        </div>
+
+        <!-- GRID DO HALL DA FAMA: FOTOS REAIS CARREGADAS DA PASTA -->
+        <div class="hall-fame-grid" id="hallFameGrid">
+          
+          <!-- ==================== PEÇA 01 (FOTO REAL: jaqueta um.jpeg) ==================== -->
+          <article class="hall-fame-card card-glow-hover" data-category="denim" data-piece-id="1">
+            <div class="card-edition-badge-bar">
+              <span class="badge-edition-white">EDN // 01</span>
+              <span class="badge-edition-blue">AUTORAL • 2026</span>
+            </div>
+
+            <div class="hall-fame-podium">
+              <div class="podium-watermark">01</div>
+              <div class="podium-spotlight"></div>
+              
+              <div class="jacket-image-container">
+                <img 
+                  src="assets/jaquetas/jaqueta-01.jpg" 
+                  onerror="this.onerror=null; this.src='assets/jaquetas/jaqueta um.jpeg';" 
+                  alt="Jaqueta Customizada 01 - Yasmim Soares" 
+                  class="jacket-photo-img real-photo"
+                  loading="lazy"
+                >
+              </div>
+
+              <div class="podium-pedestal-line"></div>
+            </div>
+
+            <div class="hall-fame-info">
+              <div class="info-top">
+                <span class="spec-edition-tag">DENIM CUSTOM SERIES</span>
+                <h3 class="jacket-title">Cyber Denim Jacket</h3>
+                <p class="jacket-brief">
+                  Pintura têxtil manual com contrastes geométricos em azul elétrico sobre base jeans pesada.
+                </p>
+              </div>
+
+              <div class="jacket-spec-chips">
+                <span class="chip-spec">Denim 100%</span>
+                <span class="chip-spec">Pintura Manual</span>
+                <span class="chip-spec">Traço Geométrico</span>
+              </div>
+
+              <button class="btn-inspect-process" data-piece-id="1">
+                <span>Ver Detalhes do Processo</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- ==================== PEÇA 02 (FOTO REAL: jaqueta dois.jpeg) ==================== -->
+          <article class="hall-fame-card card-glow-hover" data-category="utility" data-piece-id="2">
+            <div class="card-edition-badge-bar">
+              <span class="badge-edition-white">EDN // 02</span>
+              <span class="badge-edition-blue">UPCYCLE • 2026</span>
+            </div>
+
+            <div class="hall-fame-podium">
+              <div class="podium-watermark">02</div>
+              <div class="podium-spotlight spotlight-cyan"></div>
+              
+              <div class="jacket-image-container">
+                <img 
+                  src="assets/jaquetas/jaqueta-02.jpg" 
+                  onerror="this.onerror=null; this.src='assets/jaquetas/jaqueta dois.jpeg';" 
+                  alt="Jaqueta Customizada 02 - Yasmim Soares" 
+                  class="jacket-photo-img real-photo"
+                  loading="lazy"
+                >
+              </div>
+
+              <div class="podium-pedestal-line"></div>
+            </div>
+
+            <div class="hall-fame-info">
+              <div class="info-top">
+                <span class="spec-edition-tag">TECHWEAR & UTILITY</span>
+                <h3 class="jacket-title">Cobalt Structural Vest</h3>
+                <p class="jacket-brief">
+                  Reaproveitamento têxtil estruturado, aplicação de bolsos modulares, zíperes utilitários e acabamento reforçado.
+                </p>
+              </div>
+
+              <div class="jacket-spec-chips">
+                <span class="chip-spec">Upcycling</span>
+                <span class="chip-spec">Costura Estruturada</span>
+                <span class="chip-spec">Bolsos Modulares</span>
+              </div>
+
+              <button class="btn-inspect-process" data-piece-id="2">
+                <span>Ver Detalhes do Processo</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- ==================== PEÇA 03 (FOTO REAL: jaqueta tres.jpeg) ==================== -->
+          <article class="hall-fame-card card-glow-hover" data-category="experiment" data-piece-id="3">
+            <div class="card-edition-badge-bar">
+              <span class="badge-edition-white">EDN // 03</span>
+              <span class="badge-edition-blue">SPECIAL • 2026</span>
+            </div>
+
+            <div class="hall-fame-podium">
+              <div class="podium-watermark">03</div>
+              <div class="podium-spotlight"></div>
+              
+              <div class="jacket-image-container">
+                <img 
+                  src="assets/jaquetas/jaqueta-03.jpg" 
+                  onerror="this.onerror=null; this.src='assets/jaquetas/jaqueta tres.jpeg';" 
+                  alt="Jaqueta Customizada 03 - Yasmim Soares" 
+                  class="jacket-photo-img real-photo"
+                  loading="lazy"
+                >
+              </div>
+
+              <div class="podium-pedestal-line"></div>
+            </div>
+
+            <div class="hall-fame-info">
+              <div class="info-top">
+                <span class="spec-edition-tag">CROMÁTICA & CIRCUITOS</span>
+                <h3 class="jacket-title">Electric Pulse Jacket</h3>
+                <p class="jacket-brief">
+                  Exploração de pigmentos de alto brilho (#398DFF) inspirados em circuitos elétricos e traçados dinâmicos de corrida.
+                </p>
+              </div>
+
+              <div class="jacket-spec-chips">
+                <span class="chip-spec">Pigmento Neon</span>
+                <span class="chip-spec">Linhas Dinâmicas</span>
+                <span class="chip-spec">Fixação Térmica</span>
+              </div>
+
+              <button class="btn-inspect-process" data-piece-id="3">
+                <span>Ver Detalhes do Processo</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- ==================== PEÇA 04 (FOTO REAL: jaqueta quatro.jpeg) ==================== -->
+          <article class="hall-fame-card card-glow-hover" data-category="denim" data-piece-id="4">
+            <div class="card-edition-badge-bar">
+              <span class="badge-edition-white">EDN // 04</span>
+              <span class="badge-edition-blue">MONOCHROME • 2026</span>
+            </div>
+
+            <div class="hall-fame-podium">
+              <div class="podium-watermark">04</div>
+              <div class="podium-spotlight spotlight-white"></div>
+              
+              <div class="jacket-image-container">
+                <img 
+                  src="assets/jaquetas/jaqueta-04.jpg" 
+                  onerror="this.onerror=null; this.src='assets/jaquetas/jaqueta quatro.jpeg';" 
+                  alt="Jaqueta Customizada 04 - Yasmim Soares" 
+                  class="jacket-photo-img real-photo"
+                  loading="lazy"
+                >
+              </div>
+
+              <div class="podium-pedestal-line"></div>
+            </div>
+
+            <div class="hall-fame-info">
+              <div class="info-top">
+                <span class="spec-edition-tag">LIVERY & GRAFISMO</span>
+                <h3 class="jacket-title">Monochrome Flow Jacket</h3>
+                <p class="jacket-brief">
+                  Composição de blocos em branco puro e linhas de corrida que equilibram minimalismo editorial e estética esportiva.
+                </p>
+              </div>
+
+              <div class="jacket-spec-chips">
+                <span class="chip-spec">Branco Puro</span>
+                <span class="chip-spec">Geometria Editorial</span>
+                <span class="chip-spec">Acabamento Fosco</span>
+              </div>
+
+              <button class="btn-inspect-process" data-piece-id="4">
+                <span>Ver Detalhes do Processo</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Connection Editorial Box -->
+        <div class="craft-philosophy-box">
+          <div class="philosophy-icon glow-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 20h9"></path>
+              <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+            </svg>
+          </div>
+          <div class="philosophy-text">
+            <h4 class="philosophy-title">O que o Hall da Fama manual ensina à programação:</h4>
+            <p>
+              "Na customização têxtil, não existe Ctrl+Z instantâneo: cada corte e pincelada exigem planejamento de camadas, 
+              atenção à secagem e domínio dos materiais. Essa disciplina desenvolveu em mim uma postura de testes cuidadosos, 
+              código limpo e respeito à precisão em cada detalhe entregue."
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 6: CONTACT (ATUALIZADO COM SEUS DADOS REAIS) -->
+    <section class="section-block contact-section" id="contact">
+      <div class="section-container">
+        
+        <div class="section-header-editorial">
+          <div class="section-indicator">
+            <span class="indicator-badge">06</span>
+            <span class="indicator-bar"></span>
+            <span class="indicator-title">CONEXÃO DIRETA</span>
+          </div>
+          <h2 class="section-main-heading">CONTATO<span class="electric-dot glow-dot">.</span></h2>
+        </div>
+
+        <div class="contact-editorial-layout">
+          
+          <!-- Contact Left: Dados Reais de Yasmim Soares -->
+          <div class="contact-info-panel">
+            <h3 class="contact-cta-title">
+              Vamos construir algo marcante juntos?
+            </h3>
+            <p class="contact-cta-desc">
+              Estou à procura de oportunidades de estágio ou cargo júnior em desenvolvimento de sistemas. 
+              Se você busca uma desenvolvedora dedicada, com raciocínio analítico e olhar afiado aos detalhes, será um prazer conversar.
+            </p>
+
+            <div class="contact-methods-list">
+              
+              <!-- E-mail Real Atualizado -->
+              <div class="contact-method-card glow-card">
+                <div class="method-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="method-data">
+                  <span class="method-label">E-MAIL PROFISSIONAL</span>
+                  <a href="mailto:mimy2899@gmail.com" class="method-value" id="emailAddress">mimy2899@gmail.com</a>
+                </div>
+                <button class="btn-copy-action btn-glow" id="btnCopyEmail" aria-label="Copiar e-mail" title="Copiar e-mail">
+                  <span class="copy-text">Copiar</span>
+                  <svg class="icon-copy" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Telefone / WhatsApp Real Atualizado -->
+              <div class="contact-method-card glow-card">
+                <div class="method-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="method-data">
+                  <span class="method-label">TELEFONE / WHATSAPP</span>
+                  <a href="https://wa.me/5511934219420" target="_blank" rel="noopener noreferrer" class="method-value" id="phoneValue">
+                    (11) 93421-9420
+                  </a>
+                </div>
+                <a href="https://wa.me/5511934219420" target="_blank" rel="noopener noreferrer" class="btn-direct-action btn-glow" title="Abrir WhatsApp">
+                  <span>WhatsApp</span>
+                </a>
+              </div>
+
+              <!-- Localização -->
+              <div class="contact-method-card glow-card">
+                <div class="method-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="method-data">
+                  <span class="method-label">LOCALIZAÇÃO</span>
+                  <span class="method-value">São Paulo, Brasil • Remoto / Presencial</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Social Links / Channels -->
+            <div class="contact-social-grid">
+              <a href="https://github.com/mimy2899-maker" target="_blank" rel="noopener noreferrer" class="social-chip-btn glow-chip">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>GitHub @mimy2899-maker</span>
+              </a>
+
+              <a href="https://wa.me/5511934219420" target="_blank" rel="noopener noreferrer" class="social-chip-btn glow-chip whatsapp-accent">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>WhatsApp Direto</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Right: Form -->
+          <div class="contact-form-panel card-glow-hover">
+            <div class="form-header-badge">
+              <span class="badge-status-dot glow-dot"></span>
+              <span>ENVIAR MENSAGEM DIRETA</span>
+            </div>
+
+            <form class="editorial-contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="userName" class="form-label">SEU NOME / EMPRESA</label>
+                <input type="text" id="userName" name="name" class="form-input" placeholder="Ex: Lucas / Empresa Tech" required>
+              </div>
+
+              <div class="form-group">
+                <label for="userEmail" class="form-label">SEU E-MAIL</label>
+                <input type="email" id="userEmail" name="email" class="form-input" placeholder="seuemail@empresa.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="userSubject" class="form-label">ASSUNTO</label>
+                <input type="text" id="userSubject" name="subject" class="form-input" placeholder="Oportunidade / Projeto / Conversa" required>
+              </div>
+
+              <div class="form-group">
+                <label for="userMessage" class="form-label">MENSAGEM</label>
+                <textarea id="userMessage" name="message" class="form-textarea" rows="4" placeholder="Conte brevemente sobre a oportunidade ou proposta..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit-editorial btn-glow-effect">
+                <span>Disparar Mensagem</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div class="form-feedback-message" id="formFeedback" role="alert"></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- BOTÃO FLUTUANTE DE WHATSAPP (PARA ACESSO RÁPIDO NO CELULAR) -->
+  <a href="https://wa.me/5511934219420" target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" aria-label="Falar no WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+    </svg>
+    <span class="floating-btn-text">WhatsApp</span>
+  </a>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <span class="footer-monogram">YS</span>
+        <div class="footer-text-meta">
+          <p class="footer-name">Yasmim Soares</p>
+          <p class="footer-rights">Desenvolvimento de Sistemas & Hall da Fama Autoral • 2026</p>
+        </div>
+      </div>
+
+      <div class="footer-center hide-mobile">
+        <span class="footer-tagline">“Precisão no código, autenticidade e rigor no design.”</span>
+      </div>
+
+      <div class="footer-right">
+        <a href="#home" class="btn-back-to-top" id="btnBackToTop" aria-label="Voltar ao topo da página">
+          <span>Voltar ao Topo</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL EXPANDIDO: DETALHES DO PROCESSO DA JAQUETA -->
+  <div class="editorial-modal" id="craftModal" aria-hidden="true" role="dialog">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Fechar janela modal">&times;</button>
+      <div class="modal-content" id="modalDynamicContent">
+        <!-- Injetado dinamicamente via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
